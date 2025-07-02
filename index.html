@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Title Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>BLOG TITLE GENERATOR</h1>
+
+    <div class="field full-width">
+      <label for="contentInput">Blog Content</label>
+      <textarea id="contentInput" placeholder="Enter your blog content (min 4 words)..."></textarea>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label for="tone">Tone</label>
+        <input type="text" id="tone" placeholder="e.g., Friendly" />
+      </div>
+
+      <div class="field">
+        <label for="style">Style</label>
+        <input type="text" id="style" placeholder="e.g., Informal" />
+      </div>
+
+      <div class="field">
+        <label for="maxChars">Max Characters</label>
+        <input type="number" id="maxChars" value="60" min="10" />
+      </div>
+
+      <div class="field">
+        <label for="maxWords">Max Words</label>
+        <input type="number" id="maxWords" value="10" min="2" />
+      </div>
+    </div>
+
+    <button onclick="generateTitles()">Generate Titles</button>
+
+    <div id="result"></div>
+
+    <h2 style="margin-top: 40px; color: #00ff88;">Title History</h2>
+    <div id="history"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

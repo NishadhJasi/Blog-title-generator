@@ -1,0 +1,178 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('IMAGE.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  padding: 40px;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(20, 0, 30, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+/* Input Row for Tone, Style, Max Char, Word Count */
+.input-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input, select, textarea {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 75%;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #ffffff;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 10px #ffffff00;
+}
+
+/* Special input width control */
+.input-group {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* Blog content box */
+#contentInput {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+/* White background on typing */
+textarea.filled {
+  background-color: white;
+  color: rgb(255, 252, 252);
+}
+
+/* Button */
+button {
+  background-color: #ededed;
+  color: #140020;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #02eaff;
+}
+
+/* Result titles */
+#result {
+  margin-top: 30px;
+}
+
+#result div {
+  background-color: rgba(0, 255, 136, 0.1);
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ----------------------------- */
+/* History Section Styles        */
+/* ----------------------------- */
+
+#history {
+  margin-top: 20px;
+}
+
+/* Each topic block */
+.topic-section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px dashed #00ff88;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Topic heading */
+.topic-heading {
+  color: #00ff88;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Title item */
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 255, 136, 0.1);
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+  background-color: rgba(0, 255, 136, 0.2);
+}
+
+.history-title {
+  flex: 1;
+  color: #ffffff;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #ffffff;
+  color: rgb(255, 5, 5);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ffffff;
+}
+
